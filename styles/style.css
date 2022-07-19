@@ -1,4 +1,7 @@
 /******************************* Top Part Heading+Text+Description+Buttons+Pic*******************************************/
+body{
+    margin: 0;
+}
 /* TEXT */
 .TopPart {
     display: flex;
@@ -88,19 +91,21 @@ a {
 }
 
 /* LIVE MATCH */
-.MiddlePart{
+.MiddlePart {
     display: flex;
     justify-content: space-around;
-    
+
 }
-.TransferLiveBox{
+
+.TransferLiveBox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
     column-gap: 10px;
 
 }
-.LiveGame{
+
+.LiveGame {
     display: flex;
 }
 
@@ -111,4 +116,40 @@ a {
     align-items: center;
     width: 312px;
     height: 362px;
+}
+
+/* Footer Area */
+footer {
+    background-color: #161616;
+    padding: 50px;
+}
+
+.FooterTxt {
+    position: relative;
+    top: 50px;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.DivideLine {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    border: 1px solid gray;
+}
+/* .{    
+    margin-bottom: 120PX;   
+} */
+.OthrsBox{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #B9B9B9;
+    margin-left: 15px;
 }
