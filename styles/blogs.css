@@ -1,7 +1,12 @@
 /******************************* Top Part Heading+Text+Description+Buttons+Pic*******************************************/
-body{
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
+
 /* TEXT */
 .TopPart {
     display: flex;
@@ -67,22 +72,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 312px;
-    height: 312px;
+    width: 350px ;
+    height: 300px;
     background-color: #161616;
     border-radius: 10px;
 }
 
-.menubuttons {
-    width: 252px;
-    height: 64px;
+ .menubuttons {
+    width: 200px;
+    height: 60px;
     margin-top: 10px;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
 
-.menubuttons p,
-a {
+.menubuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 20px;
     color: #161616;
@@ -92,6 +99,8 @@ a {
 
 /* LIVE MATCH */
 .MiddlePart {
+    margin-left: 120px;
+    margin-right: 120px;
     display: flex;
     justify-content: space-around;
 
@@ -104,19 +113,42 @@ a {
     column-gap: 10px;
 
 }
-
-.LiveGame {
-    display: flex;
-}
-
 .TransferLive {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 312px;
+    width: 300px;
     height: 362px;
 }
+.TransferLive img {
+    position: relative;
+    top: -20px;
+    width: 312px;
+    /* height: 362px; */
+}
+
+.transferbutton {
+    border: 1px solid #161616;
+    border-radius: 5px;
+    width: 100px;
+    height: 32px;
+    background-color: #FFFFFF;
+    position: relative;
+    left: -105px;
+    
+    margin-top: 10px;
+}
+
+.comments {
+    margin-left: 20px;
+}
+
+
 
 /* Footer Area */
 footer {
@@ -138,18 +170,27 @@ footer {
     margin-bottom: 120px;
     border: 1px solid gray;
 }
-/* .{    
-    margin-bottom: 120PX;   
-} */
-.OthrsBox{
+
+.OthrsBox {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
 }
+.Social{
+    display: flex;
+    justify-content: center;  
+}
+.SocialIcons a{
+    font-size: 50PX;
+    margin: 10px 10px;
+    color: #FFFFFF;
+}
 
 a {
+    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     color: #B9B9B9;
     margin-left: 15px;
 }
+
