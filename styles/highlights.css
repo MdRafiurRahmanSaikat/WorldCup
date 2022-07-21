@@ -174,3 +174,285 @@ a {
     margin-left: 15px;
 }
 
+/****************** Media Queries ******************/
+/*********************************** Mobile View *****/
+@media screen and (max-width:576px) {
+   
+body{
+    border: 2px solid red;
+}
+    .TopPart {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .topHeadline {
+        margin-left: 50px;
+        position: relative;
+        top: 10px;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 22px;
+
+
+    }
+
+    .description {
+
+        position: relative;
+        width: 100%;
+        height: 30%;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+
+    }
+
+    .WatchLive {
+        padding: 8px 12px;
+        width: 161px;
+        height: 50px;
+        background-color: #DD0000;
+        border-radius: 5px;
+        margin-left: 100px;
+
+    }
+
+    .TopPartPicBox {
+        width: 233px;
+        height: 245px;
+        margin: 0;
+    }
+
+    /************************* middle */
+    .MiddlePart {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+
+    }
+
+    .sidemenu {
+        margin-top: 50px;
+        margin-bottom: 150px;
+        position: relative;
+        margin-left: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 0;
+        height: 0;
+        border-radius: 10px;
+    }
+
+    .menubuttons {
+        border: 1px solid gray;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+    }
+
+    .HighLightBox {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .view {
+        background-color: #DD0000;
+        border-radius: 5px;
+        width: 131px;
+        height: 47px;
+        position: relative;
+        left: 0;
+        padding: 12px 29px;
+    }
+    
+
+    /******************************************* footer  */
+
+    footer {
+        background-color: #161616;
+        padding: 2%;
+
+    }
+
+    .OthrsBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .SocialIcons a {
+        font-size: 20PX;
+        margin: 10px 10px;
+        color: #FFFFFF;
+    }
+
+
+}
+
+/****************************Tab View***************************/
+@media screen and (min-width:577px) and (max-width:768px) {
+    body {
+        margin-top: 50px;
+       
+    }
+
+    .TopPart {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+
+
+    .topHeadline {
+        width: 289px;
+        height: 150px;
+        margin-top: 0;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 40px;
+
+    }
+
+    .description {
+        width: 316px;
+        height: 48px;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 14px;
+
+
+    }
+
+    .WatchLive {
+        margin-top: 0;
+        margin-top: 50px;
+        margin-left: 50px;
+        padding: 12px;
+        width: 161px;
+        height: 48px;
+        background-color: #DD0000;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+
+    }
+
+    .TopPartPicBox {
+
+        width: 323px;
+        height: 340px;
+        margin-right: 50px;
+        margin-top: 35px;
+    }
+
+    /************************* middle */
+    .MiddlePart {
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+
+
+    }
+
+    .sidemenu {
+        position: relative;
+
+        background-color: #FFFFFF;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 00px;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .menubuttons {
+        
+        border: 1px solid gray;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+    }   
+    .TransferLiveBox {
+       width: 80%;
+       margin-left: 100px;
+       margin-right: 0;
+       margin-top: 0;
+       margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+   
+    .view {
+        background-color: #DD0000;
+        border-radius: 5px;
+        width: 131px;
+        height: 47px;
+        position: relative;
+        left: 0;
+        padding: 12px 29px;
+    }
+      /******************************************* footer  */
+    footer {
+        background-color: #161616;
+        padding: 2%;
+
+    }
+
+    .OthrsBox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .others{
+        width: 200px;
+    }
+
+    .SocialIcons a {
+        font-size: 20PX;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #FFFFFF;
+    }
+
+
+}
+
+
+
+@media screen and (min-width:769px) {
+    .view{
+        display: none;
+    }
+}
