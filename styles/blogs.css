@@ -50,8 +50,18 @@ body {
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
+    animation: zoom 2s ease-in .5s infinite alternate-reverse ;
 }
 
+/********* Amimation  ********/
+@keyframes zoom {
+    from{
+        padding: 16px 25px;
+    }
+    to{
+        padding: 22px 35px;
+    }
+}
 /* PICTURE */
 .TopPartPicBox {
     
