@@ -160,7 +160,9 @@ body {
 /********************************** View All Button *******************/
 
 .view {
-    
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
     background-color: #DD0000;
     border-radius: 5px;
     width: 131px;
