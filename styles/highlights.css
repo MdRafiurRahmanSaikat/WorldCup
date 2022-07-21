@@ -106,30 +106,35 @@ a {
     justify-content: space-around;
 
 }
-.HighLightBox{ 
-    border-radius: 10px; 
-    box-shadow: 0 0 40px gray; 
+
+.HighLightBox {
+    border-radius: 10px;
+    box-shadow: 0 0 40px gray;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
     column-gap: 10px;
-   
+
     margin-bottom: 100px;
 }
-.VideoBox{
+
+.VideoBox {
     padding: 10px;
     border: 1PX solid lightgray;
     border-radius: 10px;
 }
-.video p{
+
+.video p {
     text-align: center;
     font-size: 25px;
     font-weight: 600;
 }
-.video{    
+
+.video {
     display: flex;
     flex-direction: column;
 }
+
 /* Footer Area */
 footer {
     background-color: #161616;
@@ -156,11 +161,13 @@ footer {
     justify-content: center;
     justify-content: space-evenly;
 }
-.Social{
+
+.Social {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
-.SocialIcons a{
+
+.SocialIcons a {
     font-size: 50PX;
     margin: 10px 10px;
     color: #FFFFFF;
@@ -177,10 +184,11 @@ a {
 /****************** Media Queries ******************/
 /*********************************** Mobile View *****/
 @media screen and (max-width:576px) {
-   
-body{
-    border: 2px solid red;
-}
+
+    body {
+        border: 2px solid red;
+    }
+
     .TopPart {
         margin: 0;
         display: flex;
@@ -193,21 +201,21 @@ body{
     }
 
     .topHeadline {
-        margin-left: 50px;
-        position: relative;
-        top: 10px;
-        text-align: center;
-        color: #FFFFFF;
+        margin-left: -55px  ;
+        width: 100%;
+        height: 100%;
         font-weight: 700;
         font-size: 22px;
-
+        text-align: center;
+        color: #FFFFFF;
 
     }
 
     .description {
-
-        position: relative;
-        width: 100%;
+        margin-left: 20px;
+        
+       
+        width: 80%;
         height: 30%;
         font-weight: 400;
         font-size: 14px;
@@ -217,16 +225,22 @@ body{
     }
 
     .WatchLive {
+        position: relative;
+        left: 160px;
+        right: 0;
+        top: 0;
+        bottom: 0;
         padding: 8px 12px;
         width: 161px;
         height: 50px;
         background-color: #DD0000;
         border-radius: 5px;
-        margin-left: 100px;
+       
 
     }
 
     .TopPartPicBox {
+        margin-top: 500px;
         width: 233px;
         height: 245px;
         margin: 0;
@@ -234,15 +248,14 @@ body{
 
     /************************* middle */
     .MiddlePart {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
 
 
     }
 
     .sidemenu {
-        margin-top: 50px;
+        margin-top: 150px;
         margin-bottom: 150px;
         position: relative;
         margin-left: 50%;
@@ -262,21 +275,17 @@ body{
     }
 
     .HighLightBox {
-        display: flex;
-        flex-direction: column;
-        
+        box-shadow: 0 0 0 ; 
+        background-color: #FFFFFF;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .VideoBox{
+        border: none;
+    }
 
-    }
-    .view {
-        background-color: #DD0000;
-        border-radius: 5px;
-        width: 131px;
-        height: 47px;
-        position: relative;
-        left: 0;
-        padding: 12px 29px;
-    }
     
+
 
     /******************************************* footer  */
 
@@ -307,7 +316,7 @@ body{
 @media screen and (min-width:577px) and (max-width:768px) {
     body {
         margin-top: 50px;
-       
+
     }
 
     .TopPart {
@@ -372,19 +381,23 @@ body{
 
     /************************* middle */
     .MiddlePart {
-        display: grid;
-        grid-template-rows: repeat(1,1fr);
+        border: 1PX SOLID green;
+        width: 100%;
+        position: relative;
+        left: -120px;
+       display: flex;
+       flex-direction: column;
 
 
     }
 
     .sidemenu {
         position: relative;
-
+      left: -90px;
         background-color: #FFFFFF;
         margin-top: 0;
         margin-bottom: 0;
-        margin-left: 00px;
+        margin-left: 0px;
         margin-right: 0;
         display: flex;
         flex-direction: row;
@@ -392,35 +405,36 @@ body{
         height: 200px;
         border-radius: 10px;
     }
+
     .menubuttons {
-        
+
         border: 1px solid gray;
         background-color: #FFFFFF;
         border-radius: 10px;
         width: 200px;
         height: 50px;
-    }   
-    .TransferLiveBox {
-       width: 80%;
-       margin-left: 100px;
-       margin-right: 0;
-       margin-top: 0;
-       margin-bottom: 0;
+    }
+
+   
+    .HighLightBox {
+       
+        box-shadow: none; 
+        background-color: #FFFFFF;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-       
+        justify-content: center;
+        align-items: center;
     }
-   
-    .view {
-        background-color: #DD0000;
-        border-radius: 5px;
-        width: 131px;
-        height: 47px;
-        position: relative;
-        left: 0;
-        padding: 12px 29px;
+    .video iframe{
+        width: 100%;
     }
-      /******************************************* footer  */
+    .VideoBox{
+        border: none;
+      
+    }
+
+
+    /******************************************* footer  */
     footer {
         background-color: #161616;
         padding: 2%;
@@ -433,7 +447,8 @@ body{
         flex-wrap: wrap;
 
     }
-    .others{
+
+    .others {
         width: 200px;
     }
 
@@ -452,7 +467,7 @@ body{
 
 
 @media screen and (min-width:769px) {
-    .view{
+    .view {
         display: none;
     }
 }
